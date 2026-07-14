@@ -80,7 +80,7 @@ const btnCV = document.getElementById('btnCV');
 
 function descargarCV(){
     const link = document.createElement('a');
-    link.href = '/assets/docs/CV-Andrés Felipe Salinas.pdf';
+    link.href = './assets/docs/CV-Andrés Felipe Salinas.pdf';
     link.dowloand = 'mi-CV';
     link.click()
 } 

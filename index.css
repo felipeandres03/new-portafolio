@@ -212,7 +212,7 @@ ion-icon {
   flex-direction: column;
   justify-content: center;
   gap: 12px;
-  background-image: url(/assets/imagenes/avatar.png);
+  background-image: url(./assets/imagenes/avatar.png);
   background-position: right center;
   background-size: auto 90%;
   background-repeat: no-repeat;
