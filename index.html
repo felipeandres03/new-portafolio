@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio | Andres Salinas</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="/index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <img
+        src="/assets/imagenes/logo.png"
+        alt="Logo Andres Salinas"
+        class="logo"
+      />
+      <div class="iniciales">AS</div>
+      <nav class="menu-link">
+        <a href="#inicio" class="link">inicio</a>
+        <a href="#sobre-mi" class="link">sobre mí</a>
+        <a href="#proyectos" class="link">proyectos</a>
+        <a href="#contacto" class="link">contáctame</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- SECCIÓN INICIO -->
+      <section class="presentacion" id="inicio">
+        <div class="presentacion-texto">
+          <h1>Hey, soy <span class="highlight">Andres Felipe</span> Salinas</h1>
+          <p class="presentacion-sub">
+            Un desarrollador de software Colombiano
+          </p>
+          <p class="presentacion-sub">
+            intentando crear un impacto en la tecnologia
+          </p>
+        </div>
+        <div>
+          <button class="btn" id="btnCV">cv</button>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <div class="items">
+        <div class="item">
+          <div class="stat">
+            <!-- ✅ span en vez de h1 para los números -->
+            <span class="stat-number">3+</span>
+            <p class="stat-label">proyectos realizados</p>
+          </div>
+          <div class="stat">
+            <span class="stat-number">1</span>
+            <p class="stat-label">año de experiencia</p>
+          </div>
+          <div class="stat">
+            <span class="stat-number">95%</span>
+            <p class="stat-label">clientes satisfechos</p>
+          </div>
+          <div class="stat">
+            <span class="stat-number">8+</span>
+            <p class="stat-label">cursos realizados</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCION SOBRE MI -->
+      <section class="sobre-mi" id="sobre-mi">
+        <div class="texto-me">
+          <h2 class="titulo">Sobre mi</h2>
+          <p class="tex-abaut-me">
+            Soy un deportista de alto rendimiento que busca desarrollarse en
+            otros aspectos de su vida y que busca retos nuevos todos los dias.
+            <br />
+            soy un apasionado de los nuevos retos tanto mentales como fisicos y
+            este mundo de la programacion es el reto que enfrento ahora...
+          </p>
+          <div class="informacion">
+            <div class="icons">
+              <ion-icon name="location-outline"></ion-icon> Colombia
+            </div>
+            <div class="icons">
+              <ion-icon name="mail-outline"></ion-icon> andresfrs.0303@gmail.com
+            </div>
+            <div class="icons">
+              <ion-icon name="checkmark-circle-outline"></ion-icon> disponible
+            </div>
+          </div>
+        </div>
+        <div class="habilidades texto-me">
+          <h2 class="titulo">Skills</h2>
+          <span class="skil-sub dominado">LO QUE DOMINO</span>
+          <div class="lenguajes-de-programacion">
+            <div class="lenguaje card-html icons skill-nivel">
+              <ion-icon name="logo-html5" class="icon-lg"></ion-icon>
+              <span class="nivel-nombre">HTML</span>
+              <div class="nivel-puntos">
+                <div class="punto on"></div>
+                <div class="punto on"></div>
+                <div class="punto on"></div>
+                <div class="punto on"></div>
+                <div class="punto"></div>
+              </div>
+              <span class="nivel-categoria avanzado">avanzado</span>
+            </div>
+            <div class="lenguaje card-css icons skill-nivel">
+              <ion-icon name="logo-css3" class="icon-lg"></ion-icon>
+              <span class="nivel-nombre">CSS</span>
+              <div class="nivel-puntos">
+                <div class="punto mid"></div>
+                <div class="punto mid"></div>
+                <div class="punto mid"></div>
+                <div class="punto"></div>
+                <div class="punto"></div>
+              </div>
+              <span class="nivel-categoria intermedio">intermedio</span>
+            </div>
+            <div class="lenguaje card-js icons skill-nivel">
+              <ion-icon name="logo-javascript" class="icon-lg"></ion-icon>
+              <span class="nivel-nombre">JAVASCRIPT</span>
+              <div class="nivel-puntos">
+                <div class="punto mid"></div>
+                <div class="punto mid"></div>
+                <div class="punto mid"></div>
+                <div class="punto"></div>
+                <div class="punto"></div>
+              </div>
+              <span class="nivel-categoria intermedio">intermedio</span>
+            </div>
+          </div>
+          <div class="en-progreso">
+            <span class="skil-sub progreso">EN PROGRESO</span>
+            <div class="lenguajes-de-programacion">
+              <div class="skill-nivel lenguaje">
+                <i class="devicon-react-original icon-lg colored"></i>
+                <span class="nivel-nombre">REACT</span>
+                <div class="nivel-puntos">
+                  <div class="punto nov"></div>
+                  <div class="punto nov"></div>
+                  <div class="punto"></div>
+                  <div class="punto"></div>
+                  <div class="punto"></div>
+                </div>
+                <span class="nivel-categoria novato">novato</span>
+              </div>
+              <div class="skill-nivel lenguaje">
+                <i class="devicon-nodejs-plain colored"></i>
+                <span class="nivel-nombre">NODEJS</span>
+                <div class="nivel-puntos">
+                  <div class="punto"></div>
+                  <div class="punto"></div>
+                  <div class="punto"></div>
+                  <div class="punto"></div>
+                  <div class="punto"></div>
+                </div>
+                <span class="nivel-categoria aprendiendo">aprendiendo</span>
+              </div>
+              <div class="skill-nivel lenguaje">
+                <i class="devicon-mongodb-plain colored"></i>
+                <span class="nivel-nombre">MONGODB</span>
+                <div class="nivel-puntos">
+                  <div class="punto"></div>
+                  <div class="punto"></div>
+                  <div class="punto"></div>
+                  <div class="punto"></div>
+                  <div class="punto"></div>
+                </div>
+                <span class="nivel-categoria aprendiendo">aprendiendo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN PROYECTOS -->
+      <section class="proyectos" id="proyectos">
+        <h2 class="titulo">Proyectos</h2>
+
+        <div class="projects-grid">
+          <!-- Proyecto 1 -->
+          <div class="project-card">
+            <div class="project-image">💼</div>
+            <div class="project-content">
+              <h3>Proyecto 1</h3>
+              <p>
+                Descripción breve del proyecto y las tecnologías utilizadas.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag card-html">
+                  <ion-icon name="logo-html5"></ion-icon> HTML
+                </span>
+                <span class="project-tag card-css">
+                  <ion-icon name="logo-css3"></ion-icon> CSS
+                </span>
+                <span class="project-tag card-js">
+                  <ion-icon name="logo-javascript"></ion-icon> JS
+                </span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Ver Demo →</a>
+                <a href="#" class="project-link">Código →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="/assets/imagenes/computer1-svgrepo-com.svg"
+                class="project-icon"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Calculadora básica</h3>
+              <p>
+                Proyecto que replica y controla una calculadora básica para
+                empresas.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag card-html">
+                  <ion-icon name="logo-html5"></ion-icon> HTML
+                </span>
+                <span class="project-tag card-css">
+                  <ion-icon name="logo-css3"></ion-icon> CSS
+                </span>
+                <span class="project-tag card-js">
+                  <ion-icon name="logo-javascript"></ion-icon> JS
+                </span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://felipeandres03.github.io/calculadora-basica/"
+                  class="project-link"
+                  >Ver Demo →</a
+                >
+                <a
+                  href="https://github.com/felipeandres03/calculadora-basica"
+                  class="project-link"
+                  >Código →</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="project-card">
+            <div class="project-image">🚀</div>
+            <div class="project-content">
+              <h3>Proyecto 3</h3>
+              <p>
+                Descripción breve del proyecto y las tecnologías utilizadas.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag card-html">
+                  <ion-icon name="logo-html5"></ion-icon> HTML
+                </span>
+                <span class="project-tag card-js">
+                  <ion-icon name="logo-javascript"></ion-icon> JS
+                </span>
+                <span class="project-tag">API</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Ver Demo →</a>
+                <a href="#" class="project-link">Código →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacto-codigo">
+          <button class="btn" id="btn-github">GitHub</button>
+          <!-- <button class="btn" id="proyectos-btn">Ver todos</button> -->
+        </div>
+      </section>
+
+      <!-- SECCION CONTACTO -->
+      <section class="contacto" id="contacto">
+        <div class="contacto-info">
+          <h2 class="titulo">¿Tienes un proyecto?</h2>
+          <p class="contacto-text">
+            Estoy disponible para proyectos freelance, colaboraciones o
+            simplemente para hablar de tecnología.
+          </p>
+          <p class="contacto-text">
+            ¿Prefieres contactarme directo? Encuéntrame en estas plataformas.
+          </p>
+          <div class="contact-links">
+            <hr class="divider" />
+            <a href="https://github.com/dashboard" class="contact-link">
+              <ion-icon name="logo-github"></ion-icon>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/tu-usuario" class="contact-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="contacto-form-wrap">
+          <form class="form-contacto">
+            <div class="form-row">
+              <input type="text" placeholder="Nombre" id="name-usuario" />
+              <input type="email" placeholder="Email" id="email-usuario" />
+            </div>
+            <textarea
+              class="mensaje"
+              placeholder="Cuentame sobre tu proyecto"
+            ></textarea>
+            <button class="btn" id="enviar-mensaje" type="submit">
+              Enviar mensaje
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- SECCION con react para traer de github los proyectos -->
+    <!-- <section class="proyextosAll">
+    hola mundo
+  </section> -->
+  </body>
+</html>
