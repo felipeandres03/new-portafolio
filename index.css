@@ -439,6 +439,11 @@ ion-icon {
   box-shadow: 0 0 24px rgba(62, 207, 142, 0.35);
 }
 
+.btn a {
+  height: 100%;
+  width: 100%;
+}
+
 /* ─── SOBRE MÍ ─── */
 .sobre-mi {
   display: flex;

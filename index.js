@@ -76,19 +76,19 @@ btnGithub.addEventListener('click',()=>{
    
 
 // boton para descargar el cv 
-const btnCV = document.getElementById('btnCV');
+// const btnCV = document.getElementById('btnCV');
 
-function descargarCV(){
-    const link = document.createElement('a');
-    link.href = './assets/docs/CV-Andrés Felipe Salinas.pdf';
-    link.dowloand = 'mi-CV';
-    link.click()
-} 
+// function descargarCV(){
+//     const link = document.createElement('a');
+//     link.href = "./assets/docs/CV-Andrés Felipe Salinas.pdf";
+//     link.dowloand = 'mi-CV';
+//     link.click()
+// } 
 
 
-btnCV.addEventListener('click', ()=>{
-    descargarCV();
-})
+// btnCV.addEventListener('click', ()=>{
+//     descargarCV();
+// })
 
 
 
